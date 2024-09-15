@@ -8,9 +8,13 @@ package com.mycompany.bridge;
  *
  * @author XPG
  */
-public class Green implements Color {
-    @Override
-    public void applyColor() {
-        System.out.println("Aplicando color verde.");
+public abstract class Shape {
+    protected Color color;
+
+    protected Shape(Color color) {
+        this.color = color;
     }
+
+    public abstract void draw();
 }
+

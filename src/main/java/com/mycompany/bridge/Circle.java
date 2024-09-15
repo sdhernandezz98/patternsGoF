@@ -8,9 +8,15 @@ package com.mycompany.bridge;
  *
  * @author XPG
  */
-public class Green implements Color {
+public class Circle extends Shape {
+    public Circle(Color color) {
+        super(color);
+    }
+
     @Override
-    public void applyColor() {
-        System.out.println("Aplicando color verde.");
+    public void draw() {
+        System.out.print("Dibujando un circulo con ");
+        color.applyColor();
     }
 }
+
