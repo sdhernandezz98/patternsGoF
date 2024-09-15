@@ -22,7 +22,7 @@ public class Dog implements Animal {
 
     @Override
     public String toString() {
-        return "Dog of breed " + this.breed;
+        return "Perro de raza " + this.breed;
     }
 }
 

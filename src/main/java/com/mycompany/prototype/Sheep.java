@@ -22,7 +22,7 @@ public class Sheep implements Animal {
 
     @Override
     public String toString() {
-        return "Sheep named " + this.name;
+        return "Oveja llamada " + this.name;
     }
 }
 
