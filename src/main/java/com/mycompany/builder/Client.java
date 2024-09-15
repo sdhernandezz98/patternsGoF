@@ -20,7 +20,15 @@ public class Client {
 
         System.out.println(house1);
 
+        // Construir una casa con 2 puertas, 6 ventanas, sin garaje, pero con piscina
+        House house2 = new House.HouseBuilder()
+                .setDoors(2)
+                .setWindows(6)
+                .setGarage(false)
+                .setSwimmingPool(true)
+                .build();
 
+        System.out.println(house2);
     }
 }
 
