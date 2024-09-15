@@ -8,15 +8,20 @@ package com.mycompany.decorator;
  *
  * @author XPG
  */
-public class BasicCoffee implements Coffee {
+public class MilkDecorator extends CoffeeDecorator {
+
+    public MilkDecorator(Coffee decoratedCoffee) {
+        super(decoratedCoffee);
+    }
+
     @Override
     public String getDescription() {
-        return "Cafe basico";
+        return decoratedCoffee.getDescription() + ", con leche";
     }
 
     @Override
     public double cost() {
-        return 5.00; // Precio del café básico
+        return decoratedCoffee.cost() + 1.50; // Precio adicional por la leche
     }
 }
 
