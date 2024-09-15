@@ -11,6 +11,6 @@ package com.mycompany.bridge;
 public class Green implements Color {
     @Override
     public void applyColor() {
-        System.out.println("Aplicando color verde.");
+        System.out.println("color verde.");
     }
 }
