@@ -24,11 +24,43 @@ public class House {
 
     @Override
     public String toString() {
-        return "House with " + doors + " doors, " + windows + " windows, " 
-                + (hasGarage ? "a garage" : "no garage") 
-                + " and " + (hasSwimmingPool ? "a swimming pool" : "no swimming pool");
+        return "Casa con " + doors + " puertas, " + windows + " ventanas, " 
+                + (hasGarage ? "un garage" : "sin garage") 
+                + " y " + (hasSwimmingPool ? "una piscina" : "sin piscina");
     }
 
+    // Clase Builder interna
+    public static class HouseBuilder {
+        private int doors;
+        private int windows;
+        private boolean hasGarage;
+        private boolean hasSwimmingPool;
 
+        // Métodos de construcción para los atributos
+        public HouseBuilder setDoors(int doors) {
+            this.doors = doors;
+            return this;
+        }
+
+        public HouseBuilder setWindows(int windows) {
+            this.windows = windows;
+            return this;
+        }
+
+        public HouseBuilder setGarage(boolean hasGarage) {
+            this.hasGarage = hasGarage;
+            return this;
+        }
+
+        public HouseBuilder setSwimmingPool(boolean hasSwimmingPool) {
+            this.hasSwimmingPool = hasSwimmingPool;
+            return this;
+        }
+
+        // Método para construir el objeto final
+        public House build() {
+            return new House(this);
+        }
+    }
 }
 
