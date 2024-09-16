@@ -12,14 +12,14 @@ public class Client {
     public static void main(String[] args) {
         // Crear un café básico
         Coffee coffee = new BasicCoffee();
-        System.out.println(coffee.getDescription() + " costs $" + coffee.cost());
+        System.out.println(coffee.getDescription() + " costo $" + coffee.cost());
 
         // Decorar el café con leche
         Coffee milkCoffee = new MilkDecorator(coffee);
-        System.out.println(milkCoffee.getDescription() + " costs $" + milkCoffee.cost());
+        System.out.println(milkCoffee.getDescription() + " costo $" + milkCoffee.cost());
 
         // Decorar el café con leche y azúcar
         Coffee sugarMilkCoffee = new SugarDecorator(milkCoffee);
-        System.out.println(sugarMilkCoffee.getDescription() + " costs $" + sugarMilkCoffee.cost());
+        System.out.println(sugarMilkCoffee.getDescription() + " costo $" + sugarMilkCoffee.cost());
     }
 }
