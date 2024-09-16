@@ -26,6 +26,6 @@ public class CurrentConditionsDisplay implements Observer {
     }
 
     public void display() {
-        System.out.println("Current conditions: " + temperature + "C degrees and " + humidity + "% humidity");
+        System.out.println("Situación actual: " + temperature + "C grados y " + humidity + "% humedad");
     }
 }
