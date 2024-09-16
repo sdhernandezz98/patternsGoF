@@ -8,12 +8,12 @@ package com.mycompany.chainofresponsability;
  *
  * @author XPG
  */
-public class BasicSupport extends SupportHandler {
+public class IntermediateSupport extends SupportHandler {
 
     @Override
     public void handleRequest(String requestType) {
-        if (requestType.equalsIgnoreCase("Basico")) {
-            System.out.println("Soporte basico: Resolviendo un problema básico.");
+        if (requestType.equalsIgnoreCase("Intermedio")) {
+            System.out.println("Soporte Intermedio: Resolviendo un problema intermedio.");
         } else if (nextHandler != null) {
             nextHandler.handleRequest(requestType);
         } else {
