@@ -18,7 +18,7 @@ public class SoundSystem {
     }
 
     public void setVolume(int level) {
-        System.out.println("Adjustando volumen en" + level);
+        System.out.println("Adjustando volumen en " + level);
     }
 }
 
