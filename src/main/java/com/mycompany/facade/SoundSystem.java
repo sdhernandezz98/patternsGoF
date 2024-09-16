@@ -10,15 +10,15 @@ package com.mycompany.facade;
  */
 public class SoundSystem {
     public void turnOn() {
-        System.out.println("Sound system is ON");
+        System.out.println("El sistema de sonido esta encendido");
     }
 
     public void turnOff() {
-        System.out.println("Sound system is OFF");
+        System.out.println("El sistema de sonido esta apagado");
     }
 
     public void setVolume(int level) {
-        System.out.println("Setting volume to " + level);
+        System.out.println("Adjustando volumen en" + level);
     }
 }
 

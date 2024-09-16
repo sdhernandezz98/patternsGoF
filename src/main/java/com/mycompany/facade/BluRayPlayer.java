@@ -8,13 +8,16 @@ package com.mycompany.facade;
  *
  * @author XPG
  */
-public class Television {
+public class BluRayPlayer {
     public void turnOn() {
-        System.out.println("La television esta encendida");
+        System.out.println("El Blu-ray esta encendido");
     }
 
     public void turnOff() {
-        System.out.println("La television esta apagada");
+        System.out.println("El Blu-ray esta apagado");
+    }
+
+    public void playMovie(String movie) {
+        System.out.println("Reproduciendo la pelicula " + movie);
     }
 }
-
